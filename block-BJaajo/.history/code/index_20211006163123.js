@@ -1,8 +1,11 @@
-Create the execution context diagram of the following code. Also write the output of the code below. Keep in mind to have call stack, web browser API and event loop in the diagram. After creating the execution context diagram add the image to the `img` folder.
+// Create the execution context diagram of the following code.
+// Also write the output of the code below. Keep in mind to have 
+// call stack, web browser API and event loop in the diagram. 
+// After creating the execution context diagram add the image to 
+// the `img` folder.
 
 1.
 
-```js
 console.log('First');
 setTimeout(() => console.log('Second'), 0);
 console.log('Third');
@@ -13,11 +16,9 @@ console.log('Third');
 // Third
 // Second
 
-```
 
 2.
 
-```js
 console.log('First');
 function secondCall() {
   console.log('Second');
@@ -33,11 +34,9 @@ console.log('Third');
 // Third
 // second
 
-```
 
 3.
 
-```js
 console.log('First');
 function secondCall() {
   console.log('Second');
@@ -52,12 +51,9 @@ console.log('Fourth');
 // Fourth
 // Third
 // second
-
-```
 
 4.
 
-```js
 console.log('First');
 function secondCall() {
   console.log('Second');
@@ -73,11 +69,10 @@ console.log('Fourth');
 // Third
 // second
 
-```
+// 5. What will be the output of the code below and why?
+//    Also write the timing of the output starting with 0 ms.
 
-5. What will be the output of the code below and why? Also write the timing of the output starting with 0 ms.
 
-```js
 function runWhileLoopForNSeconds(sec) {
   let start = Date.now(),
     now = start;
@@ -98,11 +93,12 @@ console.log('Third');
 // Third 3000ms
 // second 3001ms
 
-```
 
-6. Convert the synchronous code given below into asynchronous. If you execute this code it will print one, two and three. Change the code in such a way that it should print `one`, `three` and `two`. You are not allowed to move the code up and down.
+// 6. Convert the synchronous code given below into asynchronous.
+//    If you execute this code it will print one, two and three. 
+//    Change the code in such a way that it should print `one`, 
+//    `three` and `two`. You are not allowed to move the code up and down.
 
-```js
 console.log('one');
 console.log('two');
 console.log('three');
@@ -113,11 +109,12 @@ console.log('one');
 setTimeout(() => console.log('two'),1000);
 console.log('three');
 
-```
 
-7. Convert the synchronous code given below into asynchronous. If you execute this code it will print one, two and three. Change the code in such a way that it should print `one`, `three` and `two`. You are not allowed to move the code up and down.
+// 7. Convert the synchronous code given below into asynchronous.
+//    If you execute this code it will print one, two and three. 
+//    Change the code in such a way that it should print `one`, `three` and 
+//    `two`. You are not allowed to move the code up and down.
 
-```js
 console.log('one');
 console.log('two');
 console.log('three');
@@ -128,14 +125,15 @@ console.log('one');
 setTimeout(() => console.log('two'),1000);
 console.log('three');
 
-```
+// 8. Write a function named `asyncForEach` that is similar to `forEach`.
+//    But `asyncForEach` is asynchronous in nature rather than synchronous.
 
-8. Write a function named `asyncForEach` that is similar to `forEach`. But `asyncForEach` is asynchronous in nature rather than synchronous.
+function asyncForEach(arr){
+    setTimeout(function () { 
+      arr.forEach(num => console.log(num)
+      )}, 0);
+  }
 
-```js
-funciton asyncForEach(){
-  //
-}
 //  Output of the function below should be
 // one
 // three
@@ -144,24 +142,22 @@ funciton asyncForEach(){
 console.log('one');
 asyncForEach([1, 2, 3], (num) => console.log(num));
 console.log('three');
-```
 
-9. Convert the following function into asynchronous. The output of the function will be
 
-<!-- First Call -->
-<!-- 1, 2, 3, 4, 5 -->
-<!-- Last Call -->
+// 9. Convert the following function into asynchronous. 
+//    The output of the function will be
 
-Convert the code below in such way that the output should be the one below
+// <!-- First Call -->
+// <!-- 1, 2, 3, 4, 5 -->
+// <!-- Last Call -->
 
-<!-- First Call -->
-<!-- Last Call -->
-<!-- 1, 2, 3, 4, 5 -->
+// Convert the code below in such way that the output should be the one below
 
-```js
+// <!-- First Call -->
+// <!-- Last Call -->
+// <!-- 1, 2, 3, 4, 5 -->
+
+
 console.log('First Call');
 [1, 2, 3, 4, 5].forEach((num) => console.log(num));
 console.log('Last Call');
-```
-
-

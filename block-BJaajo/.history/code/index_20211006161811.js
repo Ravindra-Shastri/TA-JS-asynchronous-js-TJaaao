@@ -160,8 +160,6 @@ Convert the code below in such way that the output should be the one below
 
 ```js
 console.log('First Call');
-[1, 2, 3, 4, 5].forEach((num) => console.log(num));
+[1, 2, 3, 4, 5].firEach((num) => console.log(num));
 console.log('Last Call');
 ```
-
-
