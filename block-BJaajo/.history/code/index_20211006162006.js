@@ -1,8 +1,12 @@
-Create the execution context diagram of the following code. Also write the output of the code below. Keep in mind to have call stack, web browser API and event loop in the diagram. After creating the execution context diagram add the image to the `img` folder.
+// Create the execution context diagram of the following code.
+// Also write the output of the code below. Keep in mind to have 
+// call stack, web browser API and event loop in the diagram. 
+// After creating the execution context diagram add the image to 
+// the `img` folder.
 
 1.
 
-```js
+
 console.log('First');
 setTimeout(() => console.log('Second'), 0);
 console.log('Third');
@@ -13,7 +17,6 @@ console.log('Third');
 // Third
 // Second
 
-```
 
 2.
 
@@ -160,8 +163,6 @@ Convert the code below in such way that the output should be the one below
 
 ```js
 console.log('First Call');
-[1, 2, 3, 4, 5].forEach((num) => console.log(num));
+[1, 2, 3, 4, 5].firEach((num) => console.log(num));
 console.log('Last Call');
 ```
-
-
