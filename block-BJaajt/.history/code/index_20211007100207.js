@@ -8,7 +8,7 @@ const followingUser = document.querySelector(".following");
 
 function handleChange (event) {
     if (event.keyCode === 13 && input.value) {
-        let user =  event.target.value;
+```````        let user =  event.target.value;
         let xhr = new XMLHttpRequest();
 
 xhr.open('GET', `https://api.github.com/users/${user}`);
