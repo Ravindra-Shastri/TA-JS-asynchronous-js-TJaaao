@@ -21,6 +21,9 @@ function fetchData(url) {
     });
 };
 
+// CALLBACK PATTERN
+
+//
 
 // PROMISES
 
