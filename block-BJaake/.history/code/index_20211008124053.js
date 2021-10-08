@@ -4,7 +4,7 @@ let source = document.querySelector('#source');
 
 function handleChange(event) {
   document.querySelector('.display').innerHTML = '';
-  let data2 = fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=30')
+  let data2 = fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=30');
     .then((res) => res.json())
     .then((userData) =>
       userData.forEach((data) => {
