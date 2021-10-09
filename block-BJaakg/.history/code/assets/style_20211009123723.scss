@@ -2,7 +2,6 @@
 
 body{
     background-color: rgb(202, 202, 202);
-    border:1rem solid black;
 }
 .container {
     width: 100%;
@@ -18,7 +17,6 @@ h1{
     color:white;
     background-color:black;
     padding: 2rem;
-    // margin: 1rem 0;
 }
 .book-container {
     flex: 0 1 45%;
@@ -74,10 +72,6 @@ h1{
         top: 0;
     }
     small{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-
     }
     .close {
         color: red;

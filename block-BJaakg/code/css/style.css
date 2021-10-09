@@ -54,6 +54,7 @@ table {
 
 body {
   background-color: #cacaca;
+  border: 1rem solid black;
 }
 
 .container {
@@ -69,6 +70,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  padding: 2rem;
 }
 
 .book-container {
@@ -142,6 +152,18 @@ body {
   position: sticky;
   width: 100%;
   top: 0;
+}
+
+.modal small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal .close {
