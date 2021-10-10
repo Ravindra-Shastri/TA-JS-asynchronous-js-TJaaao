@@ -19,6 +19,7 @@
     
     
     function displayCharacters(characters) {
+        modal.i
         handleSpinner(charactersData, true);   
         Promise.all(characters.map((character) =>fetch(character).then((res) => res.json())))
         .then((data) => {

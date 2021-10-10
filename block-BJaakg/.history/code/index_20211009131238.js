@@ -34,8 +34,8 @@
               
         });
     
-        modal.append(charactersData);
-        
+        li.append(charactersData);
+        ul.
     }
 
     

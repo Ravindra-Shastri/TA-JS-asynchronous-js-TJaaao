@@ -31,11 +31,10 @@
             charactersData.append(li);
             
             })
-              
+                       
         });
     
         modal.append(charactersData);
-        
     }
 
     
