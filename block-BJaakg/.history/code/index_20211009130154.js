@@ -31,14 +31,13 @@
             charactersData.append(li);
             
             })
-              
+                       
         });
     
         modal.append(charactersData);
+        di
         
     }
-
-    
     
     
     function displayUI(books) {

@@ -31,11 +31,10 @@
             charactersData.append(li);
             
             })
-              
+            displayCharacters()  
         });
     
         modal.append(charactersData);
-        
     }
 
     
