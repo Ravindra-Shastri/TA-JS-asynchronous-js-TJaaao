@@ -1,0 +1,81 @@
+
+/* PAGE STYLE */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.5;
+  
+}
+.main-container{
+  height: 80vh;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: grey;
+}
+.header{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.container {
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+input{
+  padding: 1rem 12rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+  color: rgb(0, 0, 255);
+  // border: 8rem solid grey;
+  // box-shadow: 1px 6px 9px 6px aqua;
+}
+
+// .todo-container{
+//   // display: flex;
+//   flex-direction: column;
+//   // background-color:cadetblue;
+// }
+.todo-items {
+  padding: .5rem;
+  font-size: 1.4rem;
+  // -webkit-box-pack: justify;
+      // -ms-flex-pack: justify;
+          // justify-content: space-around;
+}
+
+// .todo-items .title-container {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+//   width: 80%;
+// }
+
+// .span1{
+//   display: flex;
+// }
+.todo-items .edit-Btn {
+  font-size: .5rem;
+  margin-left: .5rem;
+  justify-self: flex-end;
+}
+
+.todo-items span {
+  font-size: 1rem;
+}
+
+.update-input {
+  display: inline-block;
+  margin-left: 2rem;
+  padding: .5rem;
+}
+/*# sourceMappingURL=style.css.map */
