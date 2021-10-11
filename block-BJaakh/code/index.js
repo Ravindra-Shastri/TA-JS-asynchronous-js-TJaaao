@@ -11,7 +11,6 @@ function handleToggle(id, status) {
             isCompleted: !status,
         }
     }
-
     fetch(baseURL + `/${id}`, {
         method: "PUT",
         headers: {
@@ -54,7 +53,7 @@ function displayUI(allTodos) {
                 
             let span = document.createElement("span");
             span.innerText = "❌";
-            span.classList.add("ml-4", "block", "cursor-pointer");
+            span.classList.add("cross");
             span.addEventListener("click", (e) => {
                 deleteTodo(todo._id);
             })

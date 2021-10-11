@@ -51,3 +51,54 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* PAGE STYLE */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.5;
+}
+.header{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.container {
+  display: flex;
+}
+.todo-items {
+  padding: .5rem;
+  font-size: 1.4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todo-items .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.todo-items .edit-Btn {
+  font-size: .5rem;
+  margin-left: .5rem;
+  justify-self: flex-end;
+}
+
+.todo-items span {
+  font-size: 1rem;
+}
+
+.update-input {
+  display: inline-block;
+  margin-left: 2rem;
+  padding: .5rem;
+}
+/*# sourceMappingURL=style.css.map */
