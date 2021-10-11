@@ -61,8 +61,7 @@ function displayUI(allTodos) {
             li.append(div, span);
             rootElm.append(li);
             
-        })
-          
+        })  
 }
 
 function addTodo(event) {
